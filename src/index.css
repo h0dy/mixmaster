@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {
+  @apply font-mono
+}
+
+.btn {
+  @apply bg-teal-500 shadow cursor-pointer hover:shadow-md hover:bg-teal-600 text-white px-4 py-1 rounded tracking-wide transition-all
+}
+
+.form-label {
+  @apply block text-lg mb-2 capitalize tracking-wide
+}
+
+.form-input {
+  @apply w-full py-2 px-4 bg-gray-50 rounded border-gray-300 focus:outline-none
+}
