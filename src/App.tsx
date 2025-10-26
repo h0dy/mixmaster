@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         path: "cocktail/:id",
         element: (
           <Suspense fallback={<Loading />}>
-            <Cocktail />,
+            <Cocktail />
           </Suspense>
         ),
       },
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </QueryClientProvider>
   );
 }

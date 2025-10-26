@@ -52,10 +52,7 @@ const Cocktail = () => {
           </p>
           <p className={drinkInfoStyle}>
             <span className={drinkDataStyle}>ingredients: </span>{" "}
-            {ingredients.map((ing, idx) => {
-              if (idx === ingredients.length - 1) return ing;
-              return `${ing}, `;
-            })}
+            {ingredients.join(", ")}
           </p>
           <p className={drinkInfoStyle}>
             <span className={`${drinkDataStyle} mb-2`}>instructions: </span>{" "}
